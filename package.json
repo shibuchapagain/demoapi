@@ -1,10 +1,12 @@
 {
-  "name": "host-api-heroku",
+  "name": "host-api-render",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon node index.js",
+    "build": "npm run build",
+    "deploy": "render build"
   },
   "keywords": [],
   "author": "",
